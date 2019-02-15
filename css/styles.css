@@ -67,11 +67,11 @@ pre {
   background-color: #A00;
 }
 
-/*.stack-block:first-of-type {
+.stack-block:first-of-type {
   background-color: #00A;
 }
 
-.stack-block + .stack-block {
+/*.stack-block + .stack-block {
   margin-left: 15px;
 }
 

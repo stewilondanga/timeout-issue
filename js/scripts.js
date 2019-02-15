@@ -30,10 +30,10 @@ addCallbacks(toAdd * 2);
 setInterval(() => {
   addCallbacks(toAdd);
 }, intervalTime);
-/*
+
 // Set an interval to remove a block of the 'stack' every second.
 setTimeout(() => {
-  setInterval(()=> {
+  setInterval(() => {
     callStack.childNodes[0].classList.add('removing');
     setTimeout(() => {
       callStack.removeChild(callStack.childNodes[0]);
@@ -45,7 +45,7 @@ setTimeout(() => {
     }, 300);
   }, 1000);
 }, 500);
-
+/*
 // Add blocks To the callback stack
 function addCallbacks(numToAdd) {
   for(let j = 0; j < numToAdd; j++) {

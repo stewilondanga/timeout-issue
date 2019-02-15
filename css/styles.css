@@ -63,11 +63,11 @@ pre {
   transition: width 300ms, height .5s, margin-left 100ms, background-color .75s;
 }
 
-/*.stack-block.on-stack {
+.stack-block.on-stack {
   background-color: #A00;
 }
 
-.stack-block:first-of-type {
+/*.stack-block:first-of-type {
   background-color: #00A;
 }
 

@@ -71,11 +71,11 @@ pre {
   background-color: #00A;
 }
 
-/*.stack-block + .stack-block {
+.stack-block+.stack-block {
   margin-left: 15px;
 }
 
-.stack-block.removing {
+/*.stack-block.removing {
   width: 0px;
 }
 

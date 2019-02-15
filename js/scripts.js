@@ -11,8 +11,8 @@ const outputElement = document.querySelector('#js-output');
 const callStack = document.querySelector('#js-callstack');
 const range = 10;
 const toAdd = 5;
-/*const intervalTime = toAdd * 1000;
-
+const intervalTime = toAdd * 1000;
+/*
 // Reset the putput and then print out the numbers
 function displayNumbers() {
   outputElement.innerHTML = '';

@@ -33,12 +33,12 @@ h2 {
   font-family: 'Oxygen', sans-serif;
 }
 
-/*button,
+button,
 p {
   font-family: 'Lato', sans-serif;
 }
 
-p + p {
+/*p + p {
   margin-top: 15px;
 }
 

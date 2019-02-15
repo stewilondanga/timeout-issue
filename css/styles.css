@@ -75,11 +75,11 @@ pre {
   margin-left: 15px;
 }
 
-/*.stack-block.removing {
+.stack-block.removing {
   width: 0px;
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }

@@ -8,8 +8,8 @@ var navigate = (function() {
 })();
 
 const outputElement = document.querySelector('#js-output');
-/*const callStack = document.querySelector('#js-callstack');
-const range = 10;
+const callStack = document.querySelector('#js-callstack');
+/*const range = 10;
 const toAdd = 5;
 const intervalTime = toAdd * 1000;
 

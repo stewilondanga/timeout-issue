@@ -45,10 +45,10 @@ setTimeout(() => {
     }, 300);
   }, 1000);
 }, 500);
-/*
+
 // Add blocks To the callback stack
 function addCallbacks(numToAdd) {
-  for(let j = 0; j < numToAdd; j++) {
+  for (let j = 0; j < numToAdd; j++) {
     let newBlock = document.createElement('div');
     newBlock.classList.add('stack-block');
     callStack.appendChild(newBlock);

@@ -10,22 +10,23 @@
 <body>
 
   <div class="my_social">
-      <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
-          <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
-        </a>
-      <a href="https://stewilondanga.github.io/" class="social">
-          <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
-        </a>
-      <a href="https://twitter.com/stew_ilondanga" class="social">
-          <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
-        </a>
-    </div>
+    <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
+      <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
+    </a>
+    <a href="https://stewilondanga.github.io/" class="social">
+      <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
+    </a>
+    <a href="https://twitter.com/stew_ilondanga" class="social">
+      <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
+    </a>
+  </div>
 
-    <h1>JavaScript - On Timeouts</h1>
-    <p>Timeouts can be pretty useful. They can also be confusing when we try and run things in timeouts, and they happen in an order we aren't expecting. So let's walk through how timeouts work to try and get a better grasp on figuring out exactly when our stuff will run.</p>
-    <h2>Example</h2>
-    <p>Here's the function the example we will run. As you see, the loop prints out the number AND sets a timeout with a delay of 0 to print out the same number. What do you think will happen? What should the output be?</p>
-    <pre>
+  <h1>JavaScript - On Timeouts</h1>
+  <p>Timeouts can be pretty useful. They can also be confusing when we try and run things in timeouts, and they happen in an order we aren't expecting. So let's walk through how timeouts work to try and get a better grasp on figuring out exactly
+    when our stuff will run.</p>
+  <h2>Example</h2>
+  <p>Here's the function the example we will run. As you see, the loop prints out the number AND sets a timeout with a delay of 0 to print out the same number. What do you think will happen? What should the output be?</p>
+  <pre>
     const range = 10;
     for (let i = 0; i < range; i++) {
         outputElement.innerHTML += `${i}, `;
@@ -34,27 +35,31 @@
         }, 0);
     }
     </pre>
-    <button id="js-reset" onclick="displayNumbers()">Run Example:</button>
-    <pre class="output" id="js-output">&nbsp;</pre>
+  <button id="js-reset" onclick="displayNumbers()">Run Example:</button>
+  <pre class="output" id="js-output">&nbsp;</pre>
 
-    <h2>How It Works</h2>
-    <p>Hm, the timeouts with a delay of 0 didn't run immediately. Instead, the loop finished running and <b>then</b> the timeouts ran. Why is that?</p>
-    <p>Well, when we run a timeout, we aren't saying that the function in the timeout is run when the timer runs out. Instead, what we are saying is that when the timer hits 0, that function is added to the <b>event queue</b>. Everything on the <b>callstack</b> is run in order, and once it is empty, what's in the event queue (our timer callbacks) gets moved to the callstack, and then run. Since the loop is currently running, the callstack isn't empty, and the timeouts wait until the loop is complete before they get moved over and run.</p>
-    <p>Here's a visualisation of what's happening. Think of the blue block as the next thing to be run. All the red blocks are everything else on the callstack that are waiting for their turn to run, and the green blocks are in the event loop.</p>
-    <div class="classtack" id="js-callstack"></div>
-    <p>Since the timeout has a delay of 0, we see all new blocks get added at the same time to the event queue. Since there are things ahead of them on the callstack to run, we see they aren't actually on the callstack. However, once everything on that callstack is executed, they go onto the callstack, and are then run sequentially.</p>
+  <h2>How It Works</h2>
+  <p>Hm, the timeouts with a delay of 0 didn't run immediately. Instead, the loop finished running and <b>then</b> the timeouts ran. Why is that?</p>
+  <p>Well, when we run a timeout, we aren't saying that the function in the timeout is run when the timer runs out. Instead, what we are saying is that when the timer hits 0, that function is added to the <b>event queue</b>. Everything on the <b>callstack</b>
+    is run in order, and once it is empty, what's in the event queue (our timer callbacks) gets moved to the callstack, and then run. Since the loop is currently running, the callstack isn't empty, and the timeouts wait until the loop is complete
+    before they get moved over and run.</p>
+  <p>Here's a visualisation of what's happening. Think of the blue block as the next thing to be run. All the red blocks are everything else on the callstack that are waiting for their turn to run, and the green blocks are in the event loop.</p>
+  <div class="classtack" id="js-callstack"></div>
+  <p>Since the timeout has a delay of 0, we see all new blocks get added at the same time to the event queue. Since there are things ahead of them on the callstack to run, we see they aren't actually on the callstack. However, once everything on
+    that callstack is executed, they go onto the callstack, and are then run sequentially.</p>
 
   <section id="contact">
     <div class="overlay">
       <div class="containers">
 
         <h1>
-<script>
-with(new Date)c=-new Date(y=getFullYear(),m=getMonth()).getDay(x=new Date(y,++m,0).getDate(b=-1))
-h='<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 '+' '+y+'/'+m+'<tr>'+'SuMoTuWeThFrSa'.replace(/(..)/g,'<th>$1')
-while((b++>5?b=0:b)|c<x)h+=(b?'':'<tr>')+'<td>'+(++c<1|c>x?'-':c);document.write(h+'</table>')
-</script>
-</h1>
+          <script>
+            with(new Date) c = -new Date(y = getFullYear(), m = getMonth()).getDay(x = new Date(y, ++m, 0).getDate(b = -1))
+            h = '<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 ' + ' ' + y + '/' + m + '<tr>' + 'SuMoTuWeThFrSa'.replace(/(..)/g, '<th>$1')
+            while ((b++ > 5 ? b = 0 : b) | c < x) h += (b ? '' : '<tr>') + '<td>' + (++c < 1 | c > x ? '-' : c);
+            document.write(h + '</table>')
+          </script>
+        </h1>
 
       </div>
     </div>

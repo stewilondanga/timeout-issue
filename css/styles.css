@@ -27,16 +27,13 @@ body {
   height: 1.5em;
 }
 
-/*
-
-
 h1,
 h2 {
   margin: 20px 0;
   font-family: 'Oxygen', sans-serif;
 }
 
-button,
+/*button,
 p {
   font-family: 'Lato', sans-serif;
 }

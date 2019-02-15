@@ -12,7 +12,7 @@ const callStack = document.querySelector('#js-callstack');
 const range = 10;
 const toAdd = 5;
 const intervalTime = toAdd * 1000;
-/*
+
 // Reset the putput and then print out the numbers
 function displayNumbers() {
   outputElement.innerHTML = '';
@@ -23,7 +23,7 @@ function displayNumbers() {
     }, 0);
   }
 }
-
+/*
 // Add the initial 5
 addCallbacks(toAdd * 2);
 // Set a timeout to add X blocks every X*1000 seconds

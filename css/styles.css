@@ -42,7 +42,7 @@ p+p {
   margin-top: 15px;
 }
 
-/*pre {
+pre {
   margin: 20px 0;
   padding: 10px 15px;
   background-color: #333;
@@ -50,7 +50,7 @@ p+p {
   font-size: 16px;
 }
 
-.classtack {
+/*.classtack {
   margin: 20px 0;
   display: flex;
 }

@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -19,6 +19,72 @@ body {
 
 .my_social a img {
   height: 1.5em;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Oxygen');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px auto;
+  padding: 0 10px;
+  max-width: 800px;
+}
+
+h1,
+h2 {
+  margin: 20px 0;
+  font-family: 'Oxygen', sans-serif;
+}
+
+button,
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+p + p {
+  margin-top: 15px;
+}
+
+pre {
+  margin: 20px 0;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #FFF;
+  font-size: 16px;
+}
+
+.classtack {
+  margin: 20px 0;
+  display: flex;
+}
+
+.stack-block {
+  margin-left: 0px;
+  height: 0px;
+  width: 50px;
+  background-color: #0A0;
+  transition: width 300ms, height .5s, margin-left 100ms, background-color .75s;
+}
+
+.stack-block.on-stack {
+  background-color: #A00;
+}
+
+.stack-block:first-of-type {
+  background-color: #00A;
+}
+
+.stack-block + .stack-block {
+  margin-left: 15px;
+}
+
+.stack-block.removing {
+  width: 0px;
 }
 
 .containers {

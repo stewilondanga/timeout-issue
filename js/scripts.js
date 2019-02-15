@@ -23,14 +23,14 @@ function displayNumbers() {
     }, 0);
   }
 }
-/*
+
 // Add the initial 5
 addCallbacks(toAdd * 2);
 // Set a timeout to add X blocks every X*1000 seconds
 setInterval(() => {
   addCallbacks(toAdd);
 }, intervalTime);
-
+/*
 // Set an interval to remove a block of the 'stack' every second.
 setTimeout(() => {
   setInterval(()=> {
